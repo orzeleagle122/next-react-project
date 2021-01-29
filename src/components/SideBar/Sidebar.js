@@ -19,16 +19,48 @@ const Sidebar = ({isOpen,toggle}) => {
                 </Icon>
                 <SidebarWrapper>
                     <SidebarMenu>
-                        <SidebarLink to='about' onClick={toggle}>
+                        <SidebarLink 
+                                to='about' 
+                                onClick={toggle}
+                                smooth={true} 
+                                duration={500} 
+                                spy={true} 
+                                exact={1} 
+                                offset={-80}
+                                >
                             About
                         </SidebarLink>
-                        <SidebarLink to='descover' onClick={toggle}>
+                        <SidebarLink 
+                                to='discover' 
+                                onClick={toggle}
+                                smooth={true} 
+                                duration={500} 
+                                spy={true} 
+                                exact={1} 
+                                offset={-80}
+                                >
                             Discover
                         </SidebarLink>
-                        <SidebarLink to='services' onClick={toggle}>
+                        <SidebarLink 
+                                to='services' 
+                                onClick={toggle}
+                                smooth={true} 
+                                duration={500} 
+                                spy={true} 
+                                exact={1} 
+                                offset={-80}
+                                >
                             Services
                         </SidebarLink>
-                        <SidebarLink to='signup' onClick={toggle}>
+                        <SidebarLink 
+                                to='signup' 
+                                onClick={toggle}
+                                smooth={true} 
+                                duration={500} 
+                                spy={true} 
+                                exact={1} 
+                                offset={-80}
+                                >
                             Sign Up
                         </SidebarLink>
                     </SidebarMenu>
